@@ -1,0 +1,152 @@
+.tarrif-block{
+    margin-bottom: 13px;
+    text-align: center;
+}
+.tarrif-block [class^="col-"]{
+    padding:0;
+}
+.tarrif-block__item{
+    position: relative;
+    width: 100%;
+    max-width: 360px;
+    margin-top: 30px;
+    padding:9px 15px 36px;
+    text-align: center;
+    cursor: pointer;
+    background-color: @bg-general;
+    .box-shadow;
+    transition: all .2s;
+
+    & .btn{
+        width: 222px;
+        margin-top: 36px;
+    }
+}
+.tarrif-block__header{
+    margin-bottom: 23px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid @bg-second;
+}
+.tarrif-block__title{
+    font-family: @font-galanto-bold;
+    font-size: 40px;
+    margin-bottom: 8px;
+    color:@color-text-second;
+}
+.tarrif-block__description{
+    font-size: 15px;
+}
+.tarrif-block__advantage{
+    list-style: none;
+    margin-bottom: 0;
+    padding-left: 0;
+
+    & li{
+        position: relative;
+        padding-bottom: 16px;
+        line-height: 1.5;
+
+        &:after{
+            content:'\2022';
+            position: absolute;
+            bottom:-2px;
+            left:50%;
+            margin-left: -4px;
+            display: block;
+            text-align: center;
+            color:@color-text-light;
+        }
+
+        &:last-child:after{display: none;}
+    }
+}
+.tarrif-block__value{
+    color:@color-text-light;
+}
+.tarif-block__price{
+    font-size: 30px;
+    margin-bottom: 3px;
+    color:@color-orange;
+}
+.tarif-block__price--free{color:@color-text-light;}
+.tarrif-block__note{font-size: 18px;}
+
+.tarrif-block__selected{
+    font-family: @font-galanto-bold;
+    font-size: 20px;
+    line-height: 58px;
+    display: inline-block;
+    width: 222px;
+    height: 58px;
+    margin-top:36px;
+    color:@color-orange;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+.icon-selected-plan{
+    position: relative;
+    top:8px;
+    width: 29px;
+    height: 29px;
+    fill:@color-orange;
+}
+.tarrif-block__selected-note{text-shadow: none}
+.tarrif-block__check{
+    position: absolute;
+    left: -9999px;
+}
+.tarrif-block__check:checked + .tarrif-block__item{
+    z-index:2;
+    padding-top:5px;
+    /*margin-top: 12px;*/
+    border:2px solid @color-orange;
+    border-radius: 3px;
+
+    & .tarrif-block__title {
+        color:@color-orange;
+    }
+
+    &:after{
+        font-family: @font-lato-bold;
+        font-size: 15px;
+        content: 'SELECTED';
+        display: block;
+        position: absolute;
+        top: -11px;
+        left: 50%;
+        width: 104px;
+        height: 23px;
+        line-height: 26px;
+        margin-left: -52px;
+        padding-left: 26px;
+        text-align: left;
+        color:@color-light;
+        background: @color-orange url(../img/selected-plan-white.svg) 6px 3px no-repeat;
+        background-size: 17px 17px;
+        border-radius:3px;
+        fill:@color-light;
+    }
+    .tarrif-block__advantage{
+        min-height:255px;
+    }
+
+    & .btn{
+        display: none;
+    }
+
+    & .tarrif-block__selected{
+        display: inline-block;
+    }
+}
+@media (min-width: 992px) {
+    .tarrif-block__check:checked + .tarrif-block__item{
+        margin-top: 12px;
+    }
+    .tarrif-block__advantage{
+        min-height:215px;
+    }
+    .tarrif-block__item{
+        max-width: 100%
+    }
+}

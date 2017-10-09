@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Unibased Test</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Pixel Glass -->
+<!--   <style>
+    HTML {
+      background-repeat: no-repeat;
+      background-position:  50% 0;
+      /* По умолчанию мобильный макет */
+      background-image: url( "img/index-mobile.png" );
+    }
+    /* Планшет */
+    @media ( min-width: 760px ) {
+      HTML {
+        /* Планшетный макет */
+        background-image: url( "img/index-tablet.png" );
+      }
+    }
+    /* Десктоп */
+    @media ( min-width: 960px ) {
+      HTML {
+        /* Десктопный макет */
+        background-image: url( "img/desktop.png" );
+      }
+    }
+
+    BODY {
+      opacity: .5;
+    }
+  </style>
+  <link rel="stylesheet" href="../node_modules/pixel-glass/styles.css">
+  <script src="../node_modules/pixel-glass/script.js"></script> -->
+  <!-- // Pixel Glass -->
+</head>
+<body>
+    <div class="container">
+        <div class="header-block">
+            <h1 class="header-block__title">Adviser registration</h1>
+            <p class="header-block__lead">Please follow this wizard and you will be ready in 2 minutes.</p>
+            <img src="img/header-img.png">
+        </div>
+        <section class="tarrif-block">
+            <h2 class="block-title"><span class="block-title__text">Choose your plan</span></h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <input type="radio" name="option" id="tarrif1" class="tarrif-block__check" />
+                    <label for="tarrif1" class="tarrif-block__item">
+                        <div class="tarrif-block__header">
+                            <h3 class="tarrif-block__title">Basic</h3>
+                            <p class="tarrif-block__description">Introductory listing</p>
+                        </div>
+                        <ul class="tarrif-block__advantage">
+                            <li>Appear in our search results</li>
+                            <li>Indexed by major search engines</li>
+                            <li>No active enquiry generation</li>
+                        </ul>
+                        <div class="tarrif-block__value">
+                            <h4 class="tarif-block__price tarif-block__price--free">Free</h4>
+                            <span class="tarrif-block__note">No active enquiry generation</span>
+                            <span class="btn btn-default">Choose Basic plan</span>
+                            <div class="tarrif-block__selected">
+                                <svg class="icon-selected-plan" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                    <path d="M10 20C4.5 20 0 15.5 0 10S4.5 0 10 0s10 4.5 10 10-4.5 10-10 10zm0-18.1c-4.5 0-8.1 3.6-8.1 8.1s3.6 8.1 8.1 8.1 8.1-3.6 8.1-8.1-3.6-8.1-8.1-8.1zm-.3 11.6c-.2.2-.4.3-.7.3-.2 0-.5-.1-.7-.3l-3.1-3.1c-.1-.2-.2-.5-.2-.7 0-.3.1-.5.3-.7.2-.2.4-.3.6-.3.3 0 .5.1.7.3l2.5 2.5 4.3-4.3c.2-.2.4-.3.7-.3.2 0 .5.1.6.3.2.1.3.3.3.6s-.1.5-.3.7l-5 5z"></path>
+                                </svg>
+                                <span class="tarrif-block__selected-note">Plan selected</span>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+                <div class="col-md-4">
+                    <input type="radio" name="option" id="tarrif2" class="tarrif-block__check" checked="checked" />
+                    <label for="tarrif2" class="tarrif-block__item">
+                        <div class="tarrif-block__header">
+                            <h3 class="tarrif-block__title">Lite</h3>
+                            <p class="tarrif-block__description">Detailed profile with enquiry generation</p>
+                        </div>
+                        <ul class="tarrif-block__advantage">
+                            <li>Appear in our search results</li>
+                            <li>Indexed by major search engines</li>
+                            <li>See profile performance statistics</li>
+                            <li>Clients can email you</li>
+                            <li>Accept only the enquiries you want</li>
+                        </ul>
+                        <div class="tarrif-block__value">
+                            <h4 class="tarif-block__price">£ 29/month</h4>
+                            <span class="tarrif-block__note">Plus £30 for each enquiry</span>
+                            <span class="btn btn-primary">Choose plus plan</span>
+                            <div class="tarrif-block__selected">
+                                <svg class="icon-selected-plan" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                    <path d="M10 20C4.5 20 0 15.5 0 10S4.5 0 10 0s10 4.5 10 10-4.5 10-10 10zm0-18.1c-4.5 0-8.1 3.6-8.1 8.1s3.6 8.1 8.1 8.1 8.1-3.6 8.1-8.1-3.6-8.1-8.1-8.1zm-.3 11.6c-.2.2-.4.3-.7.3-.2 0-.5-.1-.7-.3l-3.1-3.1c-.1-.2-.2-.5-.2-.7 0-.3.1-.5.3-.7.2-.2.4-.3.6-.3.3 0 .5.1.7.3l2.5 2.5 4.3-4.3c.2-.2.4-.3.7-.3.2 0 .5.1.6.3.2.1.3.3.3.6s-.1.5-.3.7l-5 5z"></path>
+                                </svg>
+                                <span class="tarrif-block__selected-note">Plan selected</span>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+                <div class="col-md-4">
+                    <input type="radio" name="option" id="tarrif3" class="tarrif-block__check" />
+                    <label for="tarrif3" class="tarrif-block__item">
+                        <div class="tarrif-block__header">
+                            <h3 class="tarrif-block__title">Plus</h3>
+                            <p class="tarrif-block__description">Premium profile with additional services</p>
+                        </div>
+                        <ul class="tarrif-block__advantage">
+                            <li>All the benefits of Lite included/li>
+                            <li>Full contact details</li>
+                            <li>Manage all calls with Call Analytics</li>
+                            <li>Exclusive media opportunities through the Bluebook</li>
+                            <li>Your first enquiry each month is free</li>
+                        </ul>
+                        <div class="tarrif-block__value">
+                            <h4 class="tarif-block__price">£ 29/month</h4>
+                            <span class="tarrif-block__note">Plus £30 for each enquiry</span>
+                            <span class="btn btn-primary">Choose Plus plan</span>
+                            <div class="tarrif-block__selected">
+                                <svg class="icon-selected-plan" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                    <path d="M10 20C4.5 20 0 15.5 0 10S4.5 0 10 0s10 4.5 10 10-4.5 10-10 10zm0-18.1c-4.5 0-8.1 3.6-8.1 8.1s3.6 8.1 8.1 8.1 8.1-3.6 8.1-8.1-3.6-8.1-8.1-8.1zm-.3 11.6c-.2.2-.4.3-.7.3-.2 0-.5-.1-.7-.3l-3.1-3.1c-.1-.2-.2-.5-.2-.7 0-.3.1-.5.3-.7.2-.2.4-.3.6-.3.3 0 .5.1.7.3l2.5 2.5 4.3-4.3c.2-.2.4-.3.7-.3.2 0 .5.1.6.3.2.1.3.3.3.6s-.1.5-.3.7l-5 5z"></path>
+                                </svg>
+                                <span class="tarrif-block__selected-note">Plan selected</span>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </section>
+        <section class="form-profile">
+            <form action="#" method="get" role="form">
+                <div class="form-profile__profile row">
+                    <h2 class="block-title"><span class="block-title__text">Your profile details</span></h2>
+                    <div class="col-xs-12 col-md-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="companyname" name="companyname" required>
+                            <label class="placeholder" for="companyname">Company name</label>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control form-control--help" id="companyfca" name="companyfca" required>
+                            <label class="placeholder" for="companyfca">Company FCA number</label>
+                            <span class="form-help" data-toggle="tooltip" data-placement="top" title="The FCA regulates and supervises the conduct of more than 50,000 firms in the UK that provide financial products and services to both UK and international customers."><svg class="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 1c3.9 0 7 3.1 7 7s-3.1 7-7 7-7-3.1-7-7 3.1-7 7-7m0-1C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8z"></path><path d="M5.7 4.2c.2-.1.3-.2.5-.3.2-.1.3-.2.5-.3.2-.1.4-.2.6-.2s.5-.1.7-.1c.3 0 .7.1 1 .2.3.1.6.2.8.4.2.1.4.4.5.6.1.3.2.6.2.9 0 .3 0 .6-.1.9-.1.2-.2.5-.4.6s-.3.3-.5.5c-.2.1-.3.2-.5.4s-.3.2-.4.3c-.1.1-.2.3-.2.4l-.1 1h-.8l-.1-1.1v-.1c0-.2 0-.3.1-.5.1-.1.2-.3.4-.4.2-.1.3-.3.5-.4.2 0 .3-.2.5-.3.1-.2.3-.4.4-.6.1-.1.1-.4.1-.6 0-.2 0-.4-.1-.5-.1-.2-.2-.3-.3-.4-.1-.1-.3-.2-.4-.3-.2 0-.4-.1-.6-.1-.3 0-.5 0-.7.1-.2.1-.3.2-.5.2l-.3.3c-.1 0-.1.1-.2.1s-.2-.1-.3-.2l-.3-.5zM7 12.1c0-.1 0-.2.1-.3 0-.1.1-.2.2-.3.1-.1.2-.1.3-.2.1 0 .2-.1.3-.1.1 0 .2 0 .3.1.1 0 .2.1.3.2.1.1.1.2.2.3 0 .1.1.2.1.3 0 .1 0 .2-.1.3 0 .1-.1.2-.2.3-.1.1-.2.1-.3.2-.1 0-.2.1-.3.1-.1 0-.2 0-.3-.1-.1 0-.2-.1-.3-.2-.1-.1-.1-.2-.2-.3-.1-.1-.1-.2-.1-.3z"></path></svg></span>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-12">
+                        <div class="form-group">
+                            <select multiple="multiple" class="select">
+                                <option value="sri" selected="selected">Socially responsible investments</option>
+                                <option value="tep" selected="selected">Traded endowment policies</option>
+                                <option value="it" selected="selected">Investment trusts</option>
+                                <option value="prp" selected="selected" selected="selected">Pensions &amp; retirement planning </option>
+                                <option value="pc" selected="selected">Pension consolidation</option>
+                                <option value="ae" selected="selected">Auto enrolment</option>
+                            </select>
+                            <label class="placeholder placeholder--select" for="text">Advice areas</label>
+                            <span class="form-help form-help--select" data-toggle="tooltip" data-placement="top" title="The advice areas and supervises the conduct of more than 50,000 firms in the UK that provide financial products and services to both UK and international customers."><svg class="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 1c3.9 0 7 3.1 7 7s-3.1 7-7 7-7-3.1-7-7 3.1-7 7-7m0-1C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8z"></path><path d="M5.7 4.2c.2-.1.3-.2.5-.3.2-.1.3-.2.5-.3.2-.1.4-.2.6-.2s.5-.1.7-.1c.3 0 .7.1 1 .2.3.1.6.2.8.4.2.1.4.4.5.6.1.3.2.6.2.9 0 .3 0 .6-.1.9-.1.2-.2.5-.4.6s-.3.3-.5.5c-.2.1-.3.2-.5.4s-.3.2-.4.3c-.1.1-.2.3-.2.4l-.1 1h-.8l-.1-1.1v-.1c0-.2 0-.3.1-.5.1-.1.2-.3.4-.4.2-.1.3-.3.5-.4.2 0 .3-.2.5-.3.1-.2.3-.4.4-.6.1-.1.1-.4.1-.6 0-.2 0-.4-.1-.5-.1-.2-.2-.3-.3-.4-.1-.1-.3-.2-.4-.3-.2 0-.4-.1-.6-.1-.3 0-.5 0-.7.1-.2.1-.3.2-.5.2l-.3.3c-.1 0-.1.1-.2.1s-.2-.1-.3-.2l-.3-.5zM7 12.1c0-.1 0-.2.1-.3 0-.1.1-.2.2-.3.1-.1.2-.1.3-.2.1 0 .2-.1.3-.1.1 0 .2 0 .3.1.1 0 .2.1.3.2.1.1.1.2.2.3 0 .1.1.2.1.3 0 .1 0 .2-.1.3 0 .1-.1.2-.2.3-.1.1-.2.1-.3.2-.1 0-.2.1-.3.1-.1 0-.2 0-.3-.1-.1 0-.2-.1-.3-.2-.1-.1-.1-.2-.2-.3-.1-.1-.1-.2-.1-.3z"></path></svg></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-profile__contact row">
+                    <h2 class="block-title"><span class="block-title__text">Contact person</span></h2>
+                    <div class="col-xs-12 text-center">
+                        <div class="form-group form-group--checkbox">
+                            <input class="checkbox" type="checkbox" id="sameadv" checked />
+                            <label for="sameadv">Same as adviser above</label>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="firstname" name="firstname" value="Claire" disabled>
+                            <label class="placeholder" for="firstname">First name</label>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="lastname" name="lastname" value="Jackson" disabled>
+                            <label class="placeholder" for="lastname"">Last name</label>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control form-control--help" id="email" name="email" required>
+                            <label class="placeholder" for="email">Contact email</label>
+                            <span class="form-help" data-toggle="tooltip" data-placement="top" title="The email help text."><svg class="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 1c3.9 0 7 3.1 7 7s-3.1 7-7 7-7-3.1-7-7 3.1-7 7-7m0-1C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8z"></path><path d="M5.7 4.2c.2-.1.3-.2.5-.3.2-.1.3-.2.5-.3.2-.1.4-.2.6-.2s.5-.1.7-.1c.3 0 .7.1 1 .2.3.1.6.2.8.4.2.1.4.4.5.6.1.3.2.6.2.9 0 .3 0 .6-.1.9-.1.2-.2.5-.4.6s-.3.3-.5.5c-.2.1-.3.2-.5.4s-.3.2-.4.3c-.1.1-.2.3-.2.4l-.1 1h-.8l-.1-1.1v-.1c0-.2 0-.3.1-.5.1-.1.2-.3.4-.4.2-.1.3-.3.5-.4.2 0 .3-.2.5-.3.1-.2.3-.4.4-.6.1-.1.1-.4.1-.6 0-.2 0-.4-.1-.5-.1-.2-.2-.3-.3-.4-.1-.1-.3-.2-.4-.3-.2 0-.4-.1-.6-.1-.3 0-.5 0-.7.1-.2.1-.3.2-.5.2l-.3.3c-.1 0-.1.1-.2.1s-.2-.1-.3-.2l-.3-.5zM7 12.1c0-.1 0-.2.1-.3 0-.1.1-.2.2-.3.1-.1.2-.1.3-.2.1 0 .2-.1.3-.1.1 0 .2 0 .3.1.1 0 .2.1.3.2.1.1.1.2.2.3 0 .1.1.2.1.3 0 .1 0 .2-.1.3 0 .1-.1.2-.2.3-.1.1-.2.1-.3.2-.1 0-.2.1-.3.1-.1 0-.2 0-.3-.1-.1 0-.2-.1-.3-.2-.1-.1-.1-.2-.2-.3-.1-.1-.1-.2-.1-.3z"></path></svg></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-profile__password row">
+                    <h2 class="block-title"><span class="block-title__text">Your password</span></h2>
+                    <div class="col-xs-12 col-md-6">
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="password" name="password" required>
+                            <label class="placeholder" for="password">Password</label>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="confirmpassword" name="confirmpassword" required>
+                            <label class="placeholder" for="confirmpassword">Confirm password</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-profile__footer row">
+                    <div class="col-xs-12 col-md-12">
+                        <div class="form-group form-group--checkbox">
+                            <span class="form-group__checkbox-item">
+                                <input class="checkbox" type="checkbox" id="statistic" checked />
+                                <label for="statistic">Tick if you want to get tips on on how to improve your profile visibility and some real statistics</label>
+                            </span>
+                            <span class="form-group__checkbox-item">
+                                <input class="checkbox" type="checkbox" id="moreuse" checked />
+                                <label for="moreuse">Tick if you want to get someting even more useful</label>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-12 text-center">
+                        <button type="submit" class="btn btn-primary">Complete signup<span class="hidden-xs"> and proceed to payment</span></button>
+                        <span class="btn__comment">By clicking "Complete signup and proceed to payment" I agree to Unbiased's Terms of Service</span>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

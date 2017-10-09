@@ -1,0 +1,128 @@
+.form-group {
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+.form-group--checkbox{
+    margin-bottom: 40px;
+}
+.form-group__checkbox-item{
+    display: block;
+    margin-bottom: 18px;
+}
+.input-group {
+    position: relative;
+}
+.form-control {
+    font-size: 18px;
+    font-weight: 300;
+    display: block;
+    width: 100%;
+    height: 55px;
+    padding: 10px 16px 6px;
+    color:@color-text;
+    background-color: transparent;
+    border: 1px solid @color-second;
+    border-radius: 3px;
+
+    &:focus {
+        border-color: @color-second;
+        outline: none;
+        box-shadow: none;
+
+        & ~ .placeholder, .form-control:valid ~ .placeholder {
+            top: -15px;
+            left: 10px;
+            font-size: 15px;
+            padding:6px 8px 0;
+            color:@color-text-second;
+        }
+    }
+
+    &:valid{
+        &  ~ .placeholder {
+            top: -15px;
+            left: 10px;
+            font-size: 15px;
+            padding:6px 8px 0;
+            color: @color-text-second;
+        }
+    }
+
+    &:disabled{
+        color:@color-disabled;
+        background-color: @bg-disabled;
+
+        &  ~ .placeholder {
+            top: -15px;
+            left: 10px;
+            font-size: 15px;
+            padding:6px 8px 0;
+            color: @color-disabled;
+            background-color: @bg-disabled;
+        }
+    }
+}
+.form-control--help{
+    padding-right: 42px;
+}
+.form-horizontal .control-label {
+    position: relative;
+    top: 0;
+    margin-bottom: 0;
+}
+@media (min-width: 768px) {
+    .form-horizontal .control-label {
+        font-size: 16px;
+    }
+}
+.placeholder  {
+    position: absolute;
+    left: 10px;
+    top: 7px;
+    font-size: 18px;
+    font-weight: 300;
+    pointer-events: none;
+    padding:10px 8px 8px;
+    color:@color-placeholder;
+    background-color: #fff;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.placeholder--select{
+    top: -15px;
+    left: 10px;
+    font-size: 15px;
+    padding:6px 8px 0;
+    color:@color-placeholder;
+}
+
+.select2-container--focus{
+    & + .placeholder--select{
+        color: @color-text-second;
+    }
+}
+
+.form-help{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    width: 16px;
+    text-align: right;
+    margin-top: -7px;
+    font-size: 18px;
+    line-height: 1;
+    color: @bg-second;
+    cursor: pointer;
+    fill:@bg-second;
+
+    &:hover{
+        fill: @color-text-second;
+    }
+}
+.form-help--select{
+    right:32px;
+}

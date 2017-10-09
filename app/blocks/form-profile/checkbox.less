@@ -1,0 +1,101 @@
+.checkbox {
+    width: 15px;
+    height: 15px;
+    margin: 0 3px 0 0;
+    vertical-align: top;
+
+    & + label {
+        font-family: @font-lato-regular;
+        font-size: 15px;
+        display: inline-block;
+        margin-bottom:0;
+        color:@color-title;
+        cursor: pointer;
+    }
+
+    & + span {
+        cursor: pointer;
+        display: inline-block;
+        margin-bottom:0;
+    }
+}
+
+.checkbox:not(checked) {
+    position: absolute;
+    opacity: 0;
+
+    & + label {
+        position: relative;
+        padding: 0 0 0 30px;
+    }
+    & + label:before {
+        content: '';
+        position: absolute;
+        top: 2px;
+        left: 0;
+        width: 18px;
+        height: 18px;
+        border:1px solid @color-text-second;
+        border-radius:3px;
+        background: #fff;
+        transition: border-color .25s cubic-bezier(.71,-.46,.29,1.46),background-color .25s cubic-bezier(.71,-.46,.29,1.46);
+    }
+    & + label:after {
+        display: none;
+        position: absolute;
+        top: 5px;
+        left: 6px;
+        content: "";
+        width: 6px;
+        height: 11px;
+        border: 2px solid #fff;
+        border-left: 0;
+        border-top: 0;
+        -ms-transform: rotate(45deg) scaleY(0);
+        transform: rotate(45deg) scaleY(0);
+        transition: transform .15s cubic-bezier(.71,-.46,.88,.6) .05s;
+        -ms-transform-origin: center;
+        transform-origin: center;
+        transform: rotate(45deg) scaleY(1);
+    }
+    & + span {
+        position: relative;
+        padding: 0 0 0 30px;
+    }
+    & + span:before {
+        content: '';
+        position: absolute;
+        top: 2px;
+        left: 0;
+        width: 18px;
+        height: 18px;
+        border:1px solid @color-text-second;
+        background: #fff;
+    }
+    & + span:after {
+        content: '';
+        display: none;
+        position: absolute;
+        top: 2px;
+        left: 0px;
+        width: 18px;
+        height: 18px;
+        border:1px solid @color-text-second;
+        background: #fff url(../img/checkbox-cheked.png) 50% 50% no-repeat;
+    }
+}
+
+.checkbox:checked{
+    & + label:before{
+        background-color: @color-text-second;
+        border-color: @color-text-second;
+    }
+
+    & + label:after {
+        display: block;
+    }
+
+    & + span:after {
+        display: block;
+    }
+}
